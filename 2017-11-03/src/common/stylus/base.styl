@@ -1,0 +1,49 @@
+@import './variable'
+
+body
+	background: $color-theme
+
+a
+	color: inherit	
+
+p
+	margin: 1em 0
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e6e6e6;
+    min-height: 25px;
+    min-width: 25px;
+    border: 1px solid #e0e0e0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f7f7f7;
+    border: 1px solid #efefef;
+}
+
+.iconfont
+	font-size: inherit
+	
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5)
+	.border-1px
+		&::after
+			-webkit-transform: scaleY(.66)
+			transform: scaleY(.66)
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2)
+	.border-1px
+		&::after
+			-webkit-transform: scaleY(.5)
+			transform: scaleY(.5)
+	
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3)
+	.border-1px
+		&::after
+			-webkit-transform: scaleY(.33)
+			transform: scaleY(.33)

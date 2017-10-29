@@ -1,0 +1,21 @@
+@import '~common/stylus/variable'
+
+.tab
+	position: fixed
+	left: 0
+	top: 0
+	bottom: 0
+	width: 50px
+	color: $color-text
+	text-align: center
+	font-size: 30px
+	box-shadow: 1px 0 10px rgba(0, 0, 0, .1)
+	background: $color-theme
+	z-index: 999
+	.list
+		.item
+			padding: .5em 0
+			cursor: pointer
+			&.router-link-active
+				background: $color-cover
+			
