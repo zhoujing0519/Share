@@ -12,12 +12,14 @@
 			<div class="column">
 				<p class="sub-title">二、变量（可以统一修改）</p>
 				<div>
+					<p>文件：variable.styl</p>
 					<img src="./variable.png">
 				</div>
 			</div>
 			<div class="column">
 				<p class="sub-title">三、函数（Mixin：混入）</p>
 				<div>
+					<p>文件：mixin.styl</p>
 					<img src="./function.png">
 				</div>
 			</div>

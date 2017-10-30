@@ -6,21 +6,30 @@
 				<div class="sample">
 					<img src="./sample.png" alt="样本">
 				</div>
+				<ul>
+					<li><p>1. 英寸（屏幕对角线的长度，不是面积单位）</p></li>
+					<li><p>2. 分辨率（设备像素、物理像素）</p></li>
+					<li>
+						<p>3. PPI（pixels-per-inch: 每英寸像素数 || 像素密度）</p>
+						<img src="./ppi.png">
+					</li>
+				</ul>
 			</div>
 			<div class="column guide">
 				<p class="sub-title">
 					二、<a href="./static/dpr.jpg" target="_blank">Iphone分辨率终极指南</a>
 				</p>
 				<div>
+					<p>设备像素比：device-pixel-ratio</p>
+					<p>设备像素：device-pixel</p>
+					<p>设备独立像素：device-independent pixels</p>
 					<p>设备像素比 = 设备像素（物理像素、屏幕分辨率） / 设备独立像素（点、css像素）</p>
-					<p>PC端：设备像素比 = 1</p>
-					<p>手机端不同</p>
-					<p>dip(device-independent pixels) => 设备独立像素</p>
+					<p>PC端：一个物理像素就对应一个设备独立像素，所以它的设备像素比 === 1</p>
+					<p>移动端：两个不一定相同</p>
+					<p>在Android里，首先提出了设备像素比的概念</p>
 					<p>当ppi === 160时，1dip = 1px</p>
+					<p>通过ppi，其实可以辅助我们了解一个手机的设备像素比</p>
 				</div>
-				<p>
-					有一个很好的理论：苹果像素，因为它想使显示更清晰，更流畅，而Android厂商增加的像素在屏幕上塞进更多的东西。它解释了为什么苹果强调非视网膜视网膜的连续性，而Android集中在原始像素数。
-				</p>
 			</div>
 			<div class="column">
 				<p class="sub-title">三、比较</p>
