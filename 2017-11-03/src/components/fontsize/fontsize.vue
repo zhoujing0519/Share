@@ -3,19 +3,15 @@
 		<div class="fontsize">
 			<div class="column">
 				<p class="sub-title">一、字号：</p>
-				<p>标题（大）、副标（中）、正文（小）...</p>
+				<p>用到了哪些字号，给个区间</p>
 			</div>
 			<div class="column">
 				<p class="sub-title">二、颜色：</p>
 				<p>主题、背景、标题、正文、边框、遮罩、阴影...</p>
 				<img src="./colors.png">
-			</div>
-			<div class="column">
-				<p class="sub-title">三、圆角：</p>
-				<p>直角、小、中、大...</p>
-			</div>
-			<div class="column">
-				<p class="sub-title">四、等等等等...</p>
+				<p>颜色不一定要用16进制表示，看不出关联性</p>
+				<p>rgba（red-green-blue-alpha）：比如指定一个灰色为基准色，通过调整它的透明度，变相显示明暗</p>
+				<p>hsla（hue-saturation-lightness-alpha）：指定一个色相，通过调整它的饱和度和明暗度，来修改颜色</p>
 			</div>
 		</div>
 	</container>
