@@ -8,7 +8,7 @@ let pathconfig = {
 	stylusDestPath: __dirname + '/dist/css/', // 编译后的css文件存放路径
 };
 
-// 样式任务
+// 创建样式任务
 gulp.task('stylus', function(){
 	gulp.src(pathconfig.stylusCompilePath)
 	.pipe(stylus())
@@ -16,4 +16,5 @@ gulp.task('stylus', function(){
 	.pipe(gulp.dest(pathconfig.stylusDestPath))
 });
 
+// 执行默认任务
 gulp.task('default', ['stylus']);
