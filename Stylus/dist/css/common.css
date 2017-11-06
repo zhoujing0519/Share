@@ -1,0 +1,190 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.ellipsis,
+.btn {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.clearfix::after,
+.btn::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 0 3em;
+  font-size: 14px;
+  line-height: 3;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #b60712;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.btn .text {
+  display: inline-block;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.btn .iconfont {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1em;
+  width: 2em;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.btn:hover {
+  background: #d6000e;
+}
+.btn:hover .text {
+  -webkit-transform: translate3d(-1em, 0, 0);
+          transform: translate3d(-1em, 0, 0);
+}
+.btn:hover .iconfont {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.btn {
+  margin: 100px;
+}

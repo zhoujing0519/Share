@@ -1,0 +1,17 @@
+// 根据屏幕设备像素比匹配相应的背景图片
+bg-image($url)
+	background-image: url($url + '@2x.png')
+	@media (-min-device-pixel-ratio: 3), (device-pixel-ratio: 3)
+		background-image: url($url + '@3x.png')
+		
+// 移动端扩展热区
+extend-click($size = -10px)
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: $size
+		right: $size
+		bottom: $size
+		left: $size
+		
