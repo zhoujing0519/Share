@@ -1,0 +1,39 @@
+@import '../../common/stylus/variable.styl'
+
+.btn
+	position: relative
+	display: inline-block
+	padding: 0 3em
+	font-size: $font-s-x
+	line-height: 3
+	text-align: center
+	outline: none
+	border: none
+	border-radius: $radius-m
+	background: $color-theme-d
+	color: $color-text
+	cursor: pointer
+	overflow: hidden
+	transform-style: preserve-3d
+	transition: .4s
+	.text
+		display: inline-block
+		transform-style: preserve-3d
+		transition: .4s
+	.iconfont
+		position: absolute
+		right: 0
+		top: 0
+		font-size: 1em
+		width: 2em
+		height: 100%
+		background: $color-cover
+		transform: translate3d(100%, 0, 0)
+		transform-style: preserve-3d
+		transition: .4s
+	&:hover
+		background: $color-theme
+		.text
+			transform: translate3d(-1em, 0, 0)
+		.iconfont
+			transform: translate3d(0, 0, 0)

@@ -1,0 +1,40 @@
+.ui-layer
+	position: fixed
+	top: 0
+	left: 50%
+	transform-style: preserve-3d
+	transform: translate3d(-50%, -900px, 0)
+	visibility: hidden
+	opacity: 0
+	transition: .4s cubic-bezier(0.650, -0.600, 0.240, 1.650)
+	&.active
+		visibility: visible
+		opacity: 1
+		transform: translate3d(-50%, 0, 0)
+		.ui-layer-tips
+			transform: scale(1) rotate(360deg)
+			transition: .6s
+			transition-delay: .2s
+	.ui-layer-line
+		position: absolute
+		left: 50%
+		top: -150px
+		height: 650px
+		width: 1px
+		background: #fff
+	.ui-layer-tips
+		position: absolute
+		left: -180px
+		top: 300px
+		width: 361px
+		height: 408px
+		transform-style: preserve-3d
+		transform: scale(0) rotate(0deg)
+		transition: .6s
+		transition-delay: 0s
+		cursor: pointer
+		img
+			display: block
+			width: 100%
+			height: 100%
+		
